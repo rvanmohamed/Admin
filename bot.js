@@ -87,7 +87,8 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === '-help') {
-    msg.reply('mmkn 7drtk tklm 7d mn el STAFF fe el Gourp 4rkan Welcome Pro!');
+    msg.reply('mmkn 7drtk tklm 7d mn el STAFF fe el Gourp 4rkan Welcome Pro
+             https://www.facebook.com/groups/OneDropCF/!');
   }
 });
 
