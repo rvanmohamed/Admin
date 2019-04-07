@@ -13,7 +13,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
     if (message.content.startsWith("!avatar")) {
-        var mentionned = message.mentions.users.first(); //by  BlackOps :D
+        var mentionned = message.mentions.users.first(); //by  KePo :D
     var x5bzm;
       if(mentionned){
           var x5bzm = mentionned;
