@@ -31,7 +31,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === 'hi') {
-    msg.reply('hi!');
+    msg.reply('Welcome Pro <3!');
   }
 });
 
