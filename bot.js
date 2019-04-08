@@ -394,22 +394,12 @@ client.on('guildMemberAdd', member => {
 
     const embed = new Discord.RichEmbed()
 
-    .setColor("black")
-    .setDescription(**تاريخ دخولك للدسكورد منذ ${createdAt.toFixed(0)} يوم**)
-    .setAuthor(member.user.tag, member.user.avatarURL);
-    channel.sendEmbed(embed);
-
-
+ .setColor("black")
+ .setDescription(**تاريخ دخولك للدسكورد منذ ${createdAt.toFixed(0)} يوم**)
+ .setAuthor(member.user.tag, member.user.avatarURL);
+channel.sendEmbed(embed);
 });
 
-
-
-
-client.on('message', msg => {
-  if (msg.content == 'join') {
-    if (msg.member.voiceChannel) {
-   if (msg.member.voiceChannel.joinable) {
-      msg.member.voiceChannel.join().then(msg.react(👍')
                               
   
   
