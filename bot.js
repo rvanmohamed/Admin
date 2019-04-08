@@ -406,55 +406,11 @@ client.on('guildMemberAdd', member => {
 
 
 client.on('message', msg => {
-    if (msg.content == 'join') {
-        if (msg.member.voiceChannel) {
-
-         if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react(👍'));
-     }
-    }
-}
-})
-client.on('ready', () => { 
-client.channels.get("اي دي الروم").join();
-    });
-           
-           
-           
-           
-client.on('guildMemberRemove', member => {
-    var embed = new Discord.RichEmbed()
-.setColor('RED')
-.setTitle('Kicked Member')
-.setDescription(`ID : ${member.id}
-Last Message : ${member.lastMessage}`)
-client.channels.get('553668809886793728').send(embed)
-});
-           
-           
-           
- client.on('channelCreate', channel => {
- var embed = new Discord.RichEmbed()
-.setColor('RED')
-.setTitle('New Channel')
-.setDescription(`Channel Type : ${channel.type}
-Channel Name : <#${channel.id}>
-Created At  : ${channel.createdAt}
-Channel ID : ${channel.id}`)
-client.channels.get('ايدي الروم حقت اللوقز').send(embed)
-});
-           
-  client.on('messageUpdate',(oldm,newm) => {
-    var embed = new Discord.RichEmbed()
-.setColor('RED')
-.setTitle('New Edited Message')
-.setDescription(`Old Message : ${oldm}
-New Message : ${newm}
-By : ${newm.author}
-In channel : ${newm.channel}`)
-.setThumbnail(`${newm.author.avatarURL}`)
-client.channels.get('553668809886793728').send(embed)
-});
+  if (msg.content == 'join') {
+    if (msg.member.voiceChannel) {
+   if (msg.member.voiceChannel.joinable) {
+      msg.member.voiceChannel.join().then(msg.react(👍'));
+  
   
   
   
