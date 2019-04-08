@@ -83,7 +83,7 @@ client.on('message', message => {
       message.channel.sendEmbed(embed);
     }
 });
-
+client.login(process.env.BOT_TOKE
 
 client.on('message', msg => {
   if (msg.content === '-help') {
@@ -114,7 +114,7 @@ ${messages.size} `))
   .catch(console.error);
   }
   })
-
+client.login(process.env.BOT_TOKE
   
   
   
@@ -127,103 +127,7 @@ client.on('message', message => {
       }
       return false;
   })
-
-  let totalTextChannels = client.channels.filter(function (s) {
-      if (s.type && s.type === 'text') {
-          return true;
-      }
-      return false;
-  })
-
-  let cpu = os.cpus();
-  let cpuArray = cpu[0].model.replace(/\s+/g, " ").trim().split(" ");
-  let cpuCores = cpu.length;
-  l  if (message.content.startsWith(prefix + "stats") || message.content.startsWith(prefix + "bot")) {
-      message.channel.send({
-          embed: new Discord.RichEmbed()
-              .setColor('#36393e')
-              .setTitle(' ℹ Bot Information')
-              .addField('» Ping :', **\${client.ping}` ms.,true)
-              .addField('» RAM Usage :',`${(process.memoryUsage().rss / 1048576).toFixed()}` MB.,true)
-              .addField('» Guilds :',`${client.guilds.size}`,true)
-              .addField('» Channels :',`${client.channels.size}`,true)
-              .addField('» User :',`${client.users.size}`,true)
-              .addField('» Name :',`${client.user.tag})`,true)
-              .addField('» Platform:',`${os.platform()}`,true)
-              .addField('» CPU :',`${cpuArray[0]} ${cpuArray[1]}`,true)
-              .addField('» CPU Specs :',`${cpuCores} @ ${cpuSpeed}`,true)
-              .addField('» Private Conversations :',`${totalDMs.size}`,true)
-              .addField('» Host :',`FlixHost`,true)
-              .addField('» WebSite :',`Soon`,true)
-              .addField('» Developers :',@# " / لُوُرًاُنَسٍ  / " #**`)
-      })
-  }
-})et cpuSpeed = (cpu[0].speed / 1000) + "MHZ";
-  
-  
-  
-  
-
-
-
-client.on('guildMemberAdd', member=> {
-
-    client.channels.get("ID Room").send(`** Welcome In ur Server♥  ${member}**`);
-    });
-
-
-
-
-const replyForMention = [   "**Hi For More Informations Type ||`-help`||♥**",  ]
-client.on('message', message=> {
-    if (message.author.bot) return;
-    if (message.isMentioned(client.user))
-    {
-    message.reply(replyForMention);
-    }
-});
-
-
-
-
-
-
-client.on('ready', function() {
-      setInterval(async () => {
-    const statuslist = [
-      `<help | ${bot.guilds.size} guilds`,
-      `<help | ${bot.channels.size} channels`,
-      `<help | ${bot.users.size} users`
-    ];
-    const random = Math.floor(Math.random() * statuslist.length);
-
-    try {
-      await bot.user.setPresence({
-        game: {
-          name: `${statuslist[random]}`,
-          type: "PLAYING"
-          url: 'https://www.twitch.tv/n3k4a'
-        },
-        status: "online"
-      });
-    } catch (error) {
-      console.error(error);
-    }
-  }, 10000);
-}); //OneDrop™
-
-
-
-client.on('messageDelete', async message => {
-  let channel = (`<#${message.channel}${message.channel.discriminator}`)
-var embed = new Discord.RichEmbed()
-.setColor('#6c757d')
-.setTitle(`@${message.author.username}#${message.author.discriminator}`)
-.addField(`🗑 Message sent by @${message.author.username}#${message.author.discriminator}`, ("Message:", `\`\`\` ${message.content} \`\`\``) ,true)
-.setDescription(`Deleted in <#${message.channel.id}>`)
-.setFooter(`By: ${message.author.username} • Today at ${message.createdAt.getHours()}:${message.createdAt.getMinutes()}`)
-client.channels.find('name',"logs").send(embed)
-});
+client.login(process.env.BOT_TOK
 
 
 
@@ -239,3 +143,4 @@ client.on('guildDelete', guild => {
         .setColor('RANDOM')
 client.guilds.get('553165370148651022').channels.get('556461372804694028').send(embed)
 }); 
+client.login(process.env.BOT_TOKE
