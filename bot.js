@@ -92,3 +92,27 @@ client.on('message', msg => {
 });
 
 client.login(process.env.BOT_TOKEN);
+
+
+client.on('guildMemberAdd', member => {
+        member.guild.channels.get('اي دي الروم').setName(Total Users: ${member.guild.memberCount})
+        let humans = member.guild.members.filter(m => !m.user.bot).size;
+        member.guild.channels.get('اي دي الروم').setName(Member Count: ${humans})
+        let bots = member.guild.members.filter(m => m.user.bot).size;
+        member.guild.channels.get(' اي دي الروم').setName(Bot Count ${bots})
+    //الحقوق محفوظه لي ديمون
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
