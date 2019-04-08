@@ -50,10 +50,10 @@ client.on('message', message => {
           var x5bzm = message.author;
           
       }
-        const embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setImage(`${x5bzm.avatarURL}`)
-      message.channel.sendEmbed(embed);
+ const embed = new Discord.RichEmbed()
+ .setColor("RANDOM")
+       setImage(`${x5bzm.avatarURL}`)
+    message.channel.sendEmbed(embed);
     }
 });
 
